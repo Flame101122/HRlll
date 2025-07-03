@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>แอพบุคลากร</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f8f8;
+        }
+        header {
+            background-color: #d32f2f; /* สีแดง */
+            color: white;
+            padding: 15px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .menu {
+            display: flex;
+            gap: 20px;
+        }
+        .menu a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .profile {
+            padding: 20px;
+            text-align: center;
+        }
+        .profile img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 4px solid #d32f2f;
+        }
+        .profile h2 {
+            margin: 10px 0 5px;
+            color: #333;
+        }
+        .profile p {
+            margin: 5px 0;
+            color: #555;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            header {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+            .menu {
+                flex-direction: column;
+                width: 100%;
+                margin-top: 10px;
+            }
+            .menu a {
+                padding: 10px 0;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="menu">
+            <a href="#">หน้าแรก</a>
+            <a href="#">โปรไฟล์</a>
+        </div>
+        <div class="user-name">
+            ชื่อผู้ใช้งาน: นายวิศวะ  พาคิน
+        </div>
+    </header>
+
+    <div class="profile">
+        <img src="https://www.khaosod.co.th/wpapp/uploads/2022/02/%E0%B8%9E%E0%B8%9B%E0%B8%8A%E0%B8%A3.%E0%B9%80%E0%B8%8A%E0%B8%B7%E0%B9%88%E0%B8%AD.jpg" alt="รูปผู้ใช้งาน">
+        <h2>นายวิศวะ  พาคิน</h2>
+        <p>ตำแหน่ง: เจ้าหน้าที่ฝ่ายบุคคล</p>
+        <p>แผนก: บุคคล</p>
+        <p>ฝ่าย: สำนักงาน</p>
+    </div>
+
+</body>
+</html>
